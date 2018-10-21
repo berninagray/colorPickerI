@@ -14,15 +14,15 @@ function initColorPicker() {
 function setColorPickerEventListeners(colorBox, rgb) {
 	rgb.red.addEventListener('change', () => {
 		console.log("Red value: ", rgb.red.value);
-		setColorBox (colorBox, rgb.red.value, rgb.green.value, rgb.blue.value);
+		setBGColorBox (colorBox, rgb.red.value, rgb.green.value, rgb.blue.value);
 	});
 	rgb.green.addEventListener('change', () => {
 		console.log("Green value: ", rgb.green.value);
-		setColorBox (colorBox, rgb.red.value, rgb.green.value, rgb.blue.value);
+		setBgColorBox (colorBox, rgb.red.value, rgb.green.value, rgb.blue.value);
 	});
 	rgb.blue.addEventListener('change', () => {
 		console.log("blue value: ", rgb.blue.value);
-		setColorBox (colorBox, rgb.red.value, rgb.green.value, rgb.blue.value);
+		setBGColorBox (colorBox, rgb.red.value, rgb.green.value, rgb.blue.value);
 	});
 }
 
