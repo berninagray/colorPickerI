@@ -14,7 +14,7 @@ function initColorPicker() {
 function setColorPickerEventListeners(colorBox, rgb) {
 	rgb.red.addEventListener('change', () => {
 		console.log("Red value: ", rgb.red.value);
-		setColorBox (colorBox, 150, 150, 150);
+		setColorBox (colorBox, rgb.red.value, rgb.green.value, rgb.blue.value);
 	});
 	rgb.green.addEventListener('change', () => {
 		console.log("Green value: ", rgb.green.value);
